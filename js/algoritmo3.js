@@ -22,28 +22,6 @@
 numberArray = [1, 22, 5,1,24, 14, 24, 31, 27, 15, 105,1,1,2,1,1,3,1,1,1,1,1,1,1,1,1,1,1];
 
 function isRepeated(array){
-    let repetitions = []
-    for(let i = 0; i < array.length; i++){
-        let repetitionsCounter = 0;
-        let currentElement = array[i];
-        for(let j = 0; j < array.length; j++){
-            if(i == j){
-                continue;
-            }else{
-                if(currentElement == array[j]){
-                    repetitionsCounter++;
-                }
-            }
-            console.log(array);
-        }
-        console.log(repetitionsCounter);
-        data = {"number": currentElement, "repetitions": repetitionsCounter}
-        repetitions.push(data)
-    }
-    return repetitions;
-}
-
-function isRepeatedV2(array){
 
     let repetitions = [];
     let repetitionsCounter;
@@ -81,6 +59,6 @@ function isRepeatedV2(array){
 
 }
 
-console.log(isRepeatedV2(numberArray));
+console.log(isRepeated(numberArray));
 
 // console.log(isRepeated(numberArray));
