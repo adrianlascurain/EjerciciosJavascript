@@ -8,6 +8,18 @@ for(let i = 0; i < 3; i++){
     numbers.push(number);
 }
 
-for(let i = 0; i < 3; i++){
-    if(numbers[i] == (numbers[i+1] + numbers[i+2]))
+function checkSum(numbers){
+
+    if(numbers[0] == (numbers[1] + numbers[2])){
+        console.log(`${numbers[1]} + ${numbers[2]} = ${numbers[0]}`);
+    }else if(numbers[1] == (numbers[0] + numbers[2])){
+        console.log(`${numbers[0]} + ${numbers[2]} = ${numbers[1]}`);
+    }else if(numbers[2] == (numbers[0] + numbers[1])){
+        console.log(`${numbers[1]} + ${numbers[0]} = ${numbers[2]}`);
+    }else{
+        console.log("Ningún número es la suma de los otros dos elementos");
+    }
+    
 }
+
+checkSum(numbers);
